@@ -1,0 +1,60 @@
+:root{
+    background-color: rgb(255, 222, 227);
+}
+
+@font-face {
+    font-family: "NotoSans";
+    src: url(../assets/NotoSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: "NotoSansSemiBold";
+    src: url(../assets/NotoSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "NotoSansBold";
+    src: url(../assets/NotoSans-Bold.ttf);
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+  :root {
+    font-size: 16px;
+    --main-bg-color: #f3f4f6;
+    --main-bg-color-half-opacity: rgba(243, 244, 246, 0.5);
+    --secondary-bg-color: #ffffff;
+    --primary-font: "NotoSans";
+    --primary-font-semi-bold: "NotoSansSemiBold";
+    --primary-font-bold: "NotoSansBold";
+    --primary-header-size: 2rem;
+    --secondary-header-size: 1.25rem;
+    --standard-border-radius: 12px;
+  }
+
+  body {
+    background-color: var(--main-bg-color);
+    font-family: var(--primary-font), sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    padding: 2rem 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--primary-font-bold);
+  }
+
+  h1 {
+    font-size: var(--primary-header-size);
+  }
+
+  h2,
+  h3 {
+    font-size: var(--secondary-header-size);
+  }
